@@ -20,9 +20,9 @@ const finctionalCharacter ={
     messageWithTraditionalFunction: function(message){
         console.log(`${this.name} says: ${message}`)
     },
-    messageWithArrowFunction: (message)=>{
+    messageWithArrowFunction: (message)=>
         console.log(`${this.name} says: ${message}`)
-    }
+    
 }
 finctionalCharacter.messageWithTraditionalFunction(`hola mijo`);
 finctionalCharacter.messageWithArrowFunction(`como estas?`);
