@@ -37,7 +37,7 @@ function a(){
 }
 a();
 */
-//Es posbile almacenar funciones en objetos
+//Es posbile almacenar funciones en objetos -> metodo es una funcion que realiza un objeto
 const rocket = {
     name: 'Falcon 9',
     launchMessage: function launchMessage(){
