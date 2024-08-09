@@ -30,3 +30,5 @@ const wordFrecuency = words.reduce((accumulator, currentValue) =>{
 }, {})
 
 console.log(wordFrecuency)
+
+
