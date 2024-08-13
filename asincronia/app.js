@@ -13,6 +13,7 @@
 // then()//Se ejecuta una vez que la promesa se resuleve
 // catch()//Obtener el error que nos dice por que no se a resuelto
 
+//JS tiene una clase global llamada promise     ue recibe dos argumentos (resolve y reject)
 const promise = new Promise((resolve, reject) => {
     setTimeout(() => {//El set time out sirve para dar un tiempo para resolver cuando se manda a llamar la api
         //Simular como si llamaramos el metodo  de una api
