@@ -22,3 +22,22 @@ async function  fetchData(){
         console.log(error)
     }
 }
+
+//Manejar distintas peticiones clase for await of
+const urls =[
+    "https://rickandmortyapi.com/api/character",
+    "https://rickandmortyapi.com/api/location",
+    "https://rickandmortyapi.com/api/episode"
+]
+
+async function fetchNewData(){
+    try{
+        for await (let url of urls){//Vendria siendo como un for each incluyendo el await es decir por cada url de urls
+            let response = await fetch(url)//Va guardando en respuesta lo que se obtenga de las url de las web api
+            let data = await response.json()//Despues la respuesta se convierte a json y se guarda en data
+            console.log(data)//Se imprime
+        }
+    }catch(error){//Si fallla trae el error
+        console.log(error)
+    }
+}
